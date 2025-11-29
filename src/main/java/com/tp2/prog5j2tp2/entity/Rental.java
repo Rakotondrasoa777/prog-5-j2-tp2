@@ -26,9 +26,9 @@ public abstract class Rental {
         boolean added = listOfItemRented.add(item);
 
         if (added) {
-            logger.info("Item ajouté avec succès : " + item);
+            logger.info("Item add susccefully : " + item);
         } else {
-            logger.warning("Échec de l’ajout de l’item : " + item);
+            logger.warning("Faile to add item : " + item);
         }
     }
 
@@ -37,9 +37,9 @@ public abstract class Rental {
         boolean addedAny = listOfItemRented.addAll(listOfItem);
 
         if (addedAny) {
-            logger.info(listOfItem.size() + " items ajoutés avec succès.");
+            logger.info(listOfItem.size() + "Items added susccedely.");
         } else {
-            logger.warning("Aucun item n’a été ajouté (liste peut-être vide).");
+            logger.warning("Failed (Probably List empty)");
         }
     }
 
