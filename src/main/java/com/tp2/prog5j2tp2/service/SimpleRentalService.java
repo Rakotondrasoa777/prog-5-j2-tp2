@@ -16,8 +16,8 @@ public class SimpleRentalService {
         return simpleRental.showAllItemsRentOfClient();
     }
 
-    public void addItemRented() {
-        simpleRental.rent(instanceEntity.instanceItemRent());
+    public void addItemRented(Items itemToAdd) {
+        simpleRental.rent(itemToAdd);
     }
 
     public void payRental() {
